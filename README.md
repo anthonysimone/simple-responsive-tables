@@ -3,9 +3,9 @@
 ##Installation
 You'll need to install this similarly to how you would Foundation.
 
-- Run `bower install --save urlhere`
-- Add `paths.bowerDir + '/simple-responsive-tables/sass'` to the `includePaths` array in `gulpfile.js`. This gives you access to the mixin in your theme sass.
-- Add `paths.bowerDir + '/ResponseKit/js/responseKit.js'` to the `scriptsSrc` array in `gulpfile.js`.
+- Run `bower install --save anthonysimone/simple-responsive-tables`
+- Add `paths.bowerDir + '/simple-responsive-tables/scss'` to the `includePaths` array in `gulpfile.js`. This gives you access to the mixin in your theme sass once you import the partial.
+- Add `paths.bowerDir + '/simple-responsive-tables/js/simple-responsive-tables.js'` to the `scriptsSrc` array in `gulpfile.js`.
 
 
 ##Use
