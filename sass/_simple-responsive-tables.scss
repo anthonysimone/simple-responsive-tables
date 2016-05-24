@@ -1,0 +1,43 @@
+////
+/// Simple Responsive Tables
+/// @group simple-responsive-tables
+////
+
+
+$simple-responsive-tables-label-color: #808080 !default;
+$simple-responsive-tables-label-size: 13px !default;
+
+
+
+/// Mixin to add to tables that should behave responsively. Easiest to add this mixin old school style, max-width and below.
+/// @param {String} $responsive-table-class ['responsive-table'] - Choose the class to use to target tables
+/// @param {String} $legacy-ie-selector ['.lt-ie10'] - IE9 needs special consideration, customize the selector if necessary
+@mixin simple-responsive-table($responsive-table-class: 'responsive-table', $legacy-ie-selector: '.lt-ie10') {
+  .#{$responsive-table-class} {
+    thead {
+      display: none;
+    }
+    tr {
+      display: block;
+    }
+    td {
+      display: block;
+      &:before {
+        content: attr(data-label);
+        display: block;
+        color: $simple-responsive-tables-label-color;
+        font-size: $simple-responsive-tables-label-size;
+      }
+    }
+  }
+  // For ie9
+  #{$legacy-ie-selector} {
+    .#{$responsive-table-class} {
+      td {
+        width: 100%;
+        float: left;
+        clear: both;
+      }
+    }
+  }
+}
