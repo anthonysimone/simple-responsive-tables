@@ -6,6 +6,7 @@
 
 $simple-responsive-tables-label-color: #808080 !default;
 $simple-responsive-tables-label-size: 13px !default;
+$simple-responsive-tables-label-text-transform: uppercase !default;
 
 
 
@@ -27,6 +28,7 @@ $simple-responsive-tables-label-size: 13px !default;
         display: block;
         color: $simple-responsive-tables-label-color;
         font-size: $simple-responsive-tables-label-size;
+        text-transform: $simple-responsive-tables-label-text-transform;
       }
     }
   }
