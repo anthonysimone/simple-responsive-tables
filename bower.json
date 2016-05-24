@@ -1,0 +1,17 @@
+{
+  "name": "simple-responsive-tables",
+  "version": "0.1.0",
+  "homepage": "https://github.com/anthonysimone/simple-responsive-tables",
+  "authors": [
+    "Anthony Simone <anthony.simone7@gmail.com>"
+  ],
+  "description": "Responsive simple tables.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
