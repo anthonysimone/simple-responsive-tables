@@ -30,6 +30,9 @@ $simple-responsive-tables-label-text-transform: uppercase !default;
         font-size: $simple-responsive-tables-label-size;
         text-transform: $simple-responsive-tables-label-text-transform;
       }
+      &.empty-column {
+        display: none;
+      }
     }
   }
   // For ie9

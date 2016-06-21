@@ -44,7 +44,11 @@
         $rows.each(function() {
           var $cells = $(this).find('td');
           $cells.each(function(index) {
-            $(this).attr('data-label', $headers[index].textContent);
+            if ($(this).text().trim().length > 0) {
+              $(this).attr('data-label', $headers.eq(index).text());
+            } else {
+              $(this).addClass('empty-column');
+            }
           });
         });
       }
